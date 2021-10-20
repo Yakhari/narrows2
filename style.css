@@ -1,0 +1,232 @@
+*{
+  margin:0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.6fr 1.7fr 0.5fr 1.7fr 0.6fr;
+    grid-template-rows: 0.6fr  0.5fr 0.3fr  0.3fr 3.8fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Title-Left Title-Left Logo Title-Right Title-Right"
+      "Navbar Navbar Navbar Navbar Navbar"
+      "Arrow-Right Arrow-Right Arrow-Right Arrow-Right Arrow-Right"
+      "Arrow-Left Arrow-Left Arrow-Left Arrow-Left Arrow-Left"
+      ". Article Article Article ."
+      "Footer Footer Footer Footer Footer";
+  }
+  
+  .Title-Left { 
+    grid-area: Title-Left; 
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 40px auto;
+}
+  
+  .Title-Right { 
+    grid-area: Title-Right;
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 40px auto;
+
+}
+  
+  .Logo { 
+    grid-area: Logo;
+
+    
+}
+
+.Logo img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px auto;
+}
+  
+  .Arrow-Right { grid-area: Arrow-Right; }
+  
+  .Navbar { 
+    grid-area: Navbar; 
+    background-color: #111;
+    overflow: hidden;
+    width:100%;
+    
+  }
+  .Navbar a {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.6667%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  .Navbar a:hover {
+    background-color: #000;
+    }
+    
+    /* Style the current/active link */
+    .navbar a.active {
+     color: white;
+    }
+
+
+
+  
+  .Arrow-Left { grid-area: Arrow-Left; }
+  
+  .Article { 
+    grid-area: Article; 
+    margin-top: -7vh;
+    color: white;
+    text-align: center;
+    font-family: 'STIX Two Text', serif;
+    padding: 2vh;
+    font-size: 3vh;
+    background:linear-gradient(to bottom,rgb(43, 42, 42), black);
+  }
+  
+  .Footer { 
+    grid-area: Footer; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    overflow: hidden;
+    text-align: center;
+    background:linear-gradient(to right,rgb(100, 0, 0), rgb(100, 0, 100));
+    color: white;
+
+  }
+
+  
+.arrow {
+  width:100vw;
+  margin:-8.5vh auto;
+}
+
+.line {
+  margin-top:1.5vh;
+  width:98.8vw;
+  background:linear-gradient(to right,red, magenta);
+  height:1vh;
+  float:left;
+}
+.point {	
+    width: 0; 
+    height: 0; 
+    border-top: 2vh solid transparent;
+    border-bottom: 2vh solid transparent;
+    border-left: 2vh solid magenta;
+    float:left;
+}
+
+.arrowL {
+  width:100vw;
+  margin:-5.8vh auto;
+}
+
+.lineL {
+  margin-top:1.5vh;
+  width:98.8vw;
+  background:linear-gradient(to right,red, magenta);
+  height:1vh;
+  float:right;
+}
+.pointL {	
+    width: 0; 
+    height: 0; 
+    border-top: 2vh solid transparent;
+    border-bottom: 2vh solid transparent;
+    border-right: 2vh solid red;
+    float:right;
+}
+
+img:hover {
+    animation:spin 200s ease-in infinite;
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(-360000deg); transform:rotate(360000deg); } 
+}
+
+input{
+  border-image-source: linear-gradient(to right,rgb(100, 0, 0), rgb(100, 0, 100));
+  border-width: 5pt;
+  border-image-slice: 1;
+  height:3vh;
+  width: 25%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background: linear-gradient(to right,red, magenta);
+  border: none;
+  color: white;
+  margin:1vh;
+}
+
+.FirstName{
+  margin: 1vh;
+}
+.LastName{
+  margin: 1vh;
+}
+.UserName{
+  margin: 1vh;
+}
+.Password{
+  margin: 1vh;
+}
+.Bio{
+  margin: 1vh;
+}
+.link a{
+  background: -webkit-linear-gradient(red,magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.link a:visited{
+  background: -webkit-linear-gradient(red,magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textbox{
+  grid-area: Article; 
+  text-align: center;
+  color: white;
+  font-family: 'Electrolize', sans-serif;
+  background:linear-gradient(to bottom,rgb(43, 42, 42), black);
+  margin-top: -7vh;
+  font-size: 3vh;
+}
+.textbox a{
+  background: -webkit-linear-gradient(red,magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textbox a:visited{
+  background: -webkit-linear-gradient(rgb(255, 0, 0),magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* begin table styles */
+table{
+  border: 1px solid white;
+  width: 100%;
+  table-layout: fixed;
+}
+td,th{
+  border: 1px solid white;
+}
+

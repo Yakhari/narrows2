@@ -1,0 +1,30 @@
+Narrows is based on similar F1 racing teams website. A couple website that I took inspiration from are
+    https://www.mclaren.com/racing/
+    https://www.mercedesamgf1.com/en/
+
+I took inspiration of the types of features they offer and they way they use their team colors.
+
+Mercedes and Mclaren use their team colors (Cyan and Orange) as accents in their website. I applied the concept to the team colors that i came up for my fictional team.
+the colors that i came up with was a fade from Red to Magenta. Another strong consideration that i undertook was the simple logo. A good logo can have meaning beyond a symbol for the team. 
+It can be a visual representation of the brand. So getting the logo and by association the colors right was a must to make the website and brand memorable for the users. As a stale and coperate 
+website would not service the team well.
+
+The first part of my website that i came up with was the brand. Narrows Racing wasn't the first to come to mind for a racing team. I considered using a place name from NZ for a name. 
+I eventually landed on narrows after reading about "The Narrows" in Zion National Park in Utah, USA. While playing around with some logo designs in paint i played around with some designs using the arrow tool.
+This landed me with the arrow wheel for a logo that i have now. I put the previously mentioned grandient over it and used it as a springboard for the rest of my websites design. 
+I added some arrows around the navbar as some decoration. 
+I tried these with a white and a black background to see what made the arrows stand out more. I landed on black for the background. This gave me the color pallete for my website.
+This consists of Red, Magenta, Black, White.
+
+Next i had to figure out what purpose my dynamic part of my website would serve. I Decided that a Forum would be a great way to incorperate an account system into my website. 
+This would have Catagories that users could post topics under. And each topic would behave like a thread. So a topic would be filled with replies from other users.
+I set up all of my Server-Side and got a functional register and log in page working. But when i got to the Client-Side scripting and html for the forum I fell flat. 
+I encountentered many bugs which made the creation of the forum a slow and labourous process. This wasn't helped by my inexperience with SQL/PHP and dynamic websites as a whole. 
+I could see that the timeline would not allow me to finish the Website within the deadline. So I decided to go for a much simpler bulletin board system. This reduced the complexity and allowed me to
+finish the project within the deadline. This consisted of channels with destinct topics a continuous flow of conversation
+
+Unfortunately this lead to a much less capable website as a whole, as entire catagories where reduced down to linear channels of disccussion.
+Another feature that got the axe was a profile system. This would have allowed users to individualize their profiles with avatars and a bio.
+
+If i where to do this project again. I would of liked to include some of the features that i had to leave out. Mainly the Forums system. This would give the Users much more choice of what to talk about, and
+more ways to talk within smaller groups within the wider community
